@@ -59,7 +59,7 @@ def apply_chat_template(
             chosen_messages = example["chosen"]
             rejected_messages = example["rejected"]
             # We add an empty system message if there is none
-            if auto_insert_empty_system_msg:
+            if auto_insert_empty_system_msg:    
                 maybe_insert_system_message(chosen_messages, tokenizer)
                 maybe_insert_system_message(rejected_messages, tokenizer)
 
